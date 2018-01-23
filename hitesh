@@ -1,0 +1,48 @@
+
+--There are 2 types of modes in vim editor namely,
+
+ 1.Insert mode (we can type like anormal text editor)
+ 2.Command mode (we can give commands to the editor)
+       ESC -- to go to command mode.
+       INSERT -- to go to insert mode.
+
+Commands in COMMAND mode:
+
+* x        - DELETE
+* u        - UNDO
+* U        - UNDO WHOLE LINE
+* CTRL-R   - REDO
+* A        - APPEND TEXT AT END
+* :wq      - SAVE AND EXIT
+* :ql      - TRASH CHANGES
+* dw       - CURSOR(BEGGINING)
+* 2w       - CURSOR(2 TIMES FORWARD)
+* 3e       - CURSOR(END OF THIRD WORD FORWARD)
+* 0        - CURSOR(START OF THE LINE)
+* d2w      - DELETE 2 WORDS
+* dd       - DELETE THE WHOLE LINE
+* p        - PREVIOUSLY DELETED TEXT COMES AFTER THE CURSOR
+* r        - REPLACE A CHARACTER
+* ce       - TO CHANGE A WORD
+* G        - MOVE TO THE BOTTOM OF THE FILE
+* gg       - MOVE TO THE START OF THE FILE
+* %        - MATCHING CHARACTER
+* /        - BACKWARD SEARCH FOR NEXT OCCURENCE
+* ?        - FORWARD SEARCH
+* :|       - TO RUN SHELL COMMANDS
+* :w       - TEST
+* v        - VISUAL MODE
+* :r       - FILENAME WILL INSERT THE CONTENT INTO THE CURRENT FILE
+* R        - REPLACE (more than one charcater)
+* y        - OPERATOR TO COPY TEXT USING "v" MODE
+* yw       - COPY (one word)
+* o        - OPENS A LINE BELOW THE CURSOR
+* O        - OPENS A LINE ABOVE THE CURSOR
+* a        - INSERTS TEXT AFTER THE CURSOR
+* A        - INSERTS TEXT AFTER THE END OF LINE
+* e        - COMMAND MOVES TO THE END OF THE WORD
+* y        - OPERATOR COPIES TEXT
+* R        - REPLACE MODE UNTIL ESC ID PRESSED
+* CRTL-w   -TO JUMP FROM ONE WINDOW TO ANOTHER
+
+NOTE: Type a command :e and press CTRL+D to list all the command names starting with :e and press tab to complete the command.
