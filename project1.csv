@@ -1,3 +1,7 @@
+Project 1
+
+(The details of students i gave is as follows:)
+
 student no.,name,cgpa
 1,hitesh,5.5
 2,kishor,6.2
@@ -9,59 +13,39 @@ student no.,name,cgpa
 8,shaik,8.9
 9,kotte,7.6
 _____________________________________________________
-1. TO SORT CGPA IN AN ORDER!!!!
+1] Display 3rd column of CSEA.csv without printing the header "cgpa",also sort the same.
 
 cut -d , -f 3 project1.csv|grep -v cgpa|sort
-4.6
-5.2
-5.5
-6.2
-7.5
-7.6
-8.9
-8.9
-9.2
+
 ______________________________________________________
-2. To print only time
+2] Display only current time using date command.
 
 date +"%T"
-15:24:48
 
 ______________________________________________________
-3. use unique
+3] Use unique with all possible options.
 
 uniq -c project1.csv
-      1 student no.,name,cgpa
-      1 1,hitesh,5.5
-      1 2,kishor,6.2
-      1 3,shashank,8.9
-      1 4,venky,9.2
-      1 5,jatin,7.5
-      1 6,achal,5.2
-      1 7,prem,4.6
-      1 8,shaik,8.9
-      1 9,kotte,7.6
+   
  ______________________________________________________
-4. ls -l
+4] Print number of lines from ls -l command result.
 
 ls -l
 total 20
--rw-rw-r-- 1 cs2016b121 cs2016b121   24 Jan 30 15:13 CSV_PROJECT.csv
--rw-r--r-- 1 cs2016b121 cs2016b121 1725 Jan 23 15:11 hitesh
--rw-rw-r-- 1 cs2016b121 cs2016b121  200 Jan 27 12:37 HITESHexcel.csv
--rw-r--r-- 1 cs2016b121 cs2016b121  477 Jan 23 14:07 hitesh.txt
--rw-rw-r-- 1 cs2016b121 cs2016b121  134 Jan 30 15:13 project1.csv
 
 __________________________________________________________________
-5. print no of line from 7 to 14
+5] Display USN from 7-14 along with other fields.
 
  tail -n 8 project1.csv 
-7,prem,4.6
-8,shaik,8.9
-9,kotte,7.6
-10,abc,2.5
-11,dfsd,6.5
-12,dfsd,9.8
-13,f,8.5
-14,dsf,4.2
+
 _______________________________________________________________________
+6] Sort only name field from CSEB.scv.
+ 
+  cut -d, -f 2 project1.csv|grep -v name|sort
+
+________________________________________________________________________
+7] Replace name with student's name.
+
+   cut -d, -f 2 project1.csv | head -n 1 |tr ["name"] ["student name"]
+   
+_________________________________________________________________________
