@@ -30,6 +30,33 @@
      cat: test2: No such file or directory
      
      
+  Q1)
+  if [ -r `$file` ]
+then
+        echo " The file has read permission"
+else
+     echo "The file does not  have read permission"
+     fi
+if [ -w `$file` ]
+then
+        echo "The file has write permission"
+else
+         echo "The file does not have write permission"
+ fi
+if  [ -x `$file`]
+then
+         echo "The file has execution permission"
+ else
+          echo "The file does not  have write permission"
+
+ fi
+    result:
+     sh test.sh
+ The file has read permission
+ The file has write permission
+The file has execution permission
+
+
      
 Q3) ./ls5_for.sh
  bash: ./ls5_for.sh: Permission denied
