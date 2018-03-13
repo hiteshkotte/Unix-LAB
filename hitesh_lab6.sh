@@ -79,6 +79,8 @@ Q4)
  for i in *
  mv $i $(date "+_%d%m%Y") ${i%}
 done 
+
+
 Q5) find:
    $find $pwd -name "*.txt" -print
 ./ls3.txt
