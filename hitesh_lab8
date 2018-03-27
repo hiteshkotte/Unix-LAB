@@ -1,0 +1,33 @@
+27/03/2018
+DIALOG BOX
+
+We are using dialog box so first install dialog into the terminal using
+ "sudo apt-get install dialog" command
+
+
+1] To Create a Dialog Box
+  
+  dialog --title "Welcome" --msgbox "Hi" 10 20 
+ 
+2] To display the contents in a file
+
+  dialog --title "Welcome" --textbox "lab4.txt" 20 30
+  
+3] To print the colors in the dialog box
+   
+   dialog --title "Welcome" --menu "color" 20 30 4 1 red 2 green 3 blue 4 yellow  
+
+4] To Display which color is ON and which is OFF(using radiolist)
+   
+   dialog --title "Welcome" --radiolist "color" 20 30 8  1 red on  2 green off 3 blue off  4 yellow off
+
+5] To toggle and turn ON and OFF(using checklist)
+  
+   dialog --checklist "choose subject:" 10 40 3 \ 1 ADA on \ 2 UNIX on \ 3 MP off 
+
+   
+6] To display YES or NO questions 
+   
+    dialog --title "Message" --yesno "Unix is intresting?" 6 25
+
+
